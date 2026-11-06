@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор дій</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-container">
+    <main class="calc-wrapper">
+      <h1 class="calc-title">Калькулятор</h1>
+
+      <div class="field">
+        <label for="num1">Перше число</label>
+        <input type="text" id="num1" placeholder="Введіть число..." autocomplete="off">
+      </div>
+
+      <div class="field">
+        <label for="num2">Друге число</label>
+        <input type="text" id="num2" placeholder="Введіть число..." autocomplete="off">
+      </div>
+
+      <div class="buttons">
+        <button type="button" class="btn" data-action="add">+</button>
+        <button type="button" class="btn" data-action="subtract">−</button>
+        <button type="button" class="btn" data-action="multiply">×</button>
+        <button type="button" class="btn" data-action="divide">÷</button>
+      </div>
+
+      <div class="result-box">
+        <span class="result-label">Результат</span>
+        <div id="result-display" class="result-value">—</div>
+        <div id="error-message" class="error"></div>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <p class="author-credits">Created by Rudenko Vladyslav</p>
+      <a 
+        href="https://send.monobank.ua/jar/ANYav5Y8W2" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="donate-btn"
+      >
+        Підтримка проєкту
+      </a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
